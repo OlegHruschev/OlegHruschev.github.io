@@ -4,9 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>magazine</title>
-    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/media.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
+    <script src="script.js" defer></script>
     <header>
       <img src="images/logo.png"/ alt="logo">
       <form>
@@ -35,15 +37,51 @@
       </div>
     </nav>
     <main>
-      <div class="banner">
-        <div class="shirt">
-          <img src="images/shirt.png"/ alt="shirt">
+      <div class="slidershow-container">
+      	<div class="mySlides fade">
+          <div class="banner">
+            <div class="shirt">
+              <img src="images/shirt.png" class="shirt-img" alt="shirt">
+            </div>
+            <div class="shop-now">
+              <h1>cowhide 1</br> standart crew</h1>
+              <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+              <a href="#">shop now</a>
+            </div>
+          </div>
         </div>
-        <div class="shop-now">
-          <h1>cowhide</br> standart crew</h1>
-          <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
-          <a href="#">shop now</a>
+      	<div class="mySlides fade">
+          <div class="banner">
+            <div class="shirt">
+              <img src="images/shirt.png" class="shirt-img" alt="shirt">
+            </div>
+            <div class="shop-now">
+              <h1>cowhide 2</br> standart crew</h1>
+              <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+              <a href="#">shop now</a>
+            </div>
+          </div>
+      	</div>
+      	<div class="mySlides fade">
+          <div class="banner">
+            <div class="shirt">
+              <img src="images/shirt.png" class="shirt-img" alt="shirt">
+            </div>
+          <div class="shop-now">
+            <h1>cowhide 3</br> standart crew</h1>
+            <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+            <a href="#">shop now</a>
+          </div>
         </div>
+      </div>
+      <a onclick="plusSlides(-1)" class="prev">&#10094</a>
+      <a onclick="plusSlides(1)" class="next">&#10095</a>
+      </div>
+      <div style="text-align:center;">
+      		<span class="dot" onclick="currentSlide(1)"></span>
+      		<span class="dot" onclick="currentSlide(2)"></span>
+      		<span class="dot" onclick="currentSlide(3)"></span>
+      	</div>
       </div>
     </main>
     <sidebar>
@@ -85,8 +123,6 @@
         <img class="baks" src="images/baks.png"/>
         <a href="#">buy now</a>
       </div>
-    </figure>
-    <figure>
       <div  class="items">
         <img class="goods" src="images/purse.png"/>
         <img class="branded" src="images/branded-shoe.png"/>
